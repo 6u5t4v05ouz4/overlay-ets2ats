@@ -49,6 +49,26 @@ Seja você um caminhoneiro virtual experiente ou um iniciante explorando as estr
 - **Atalhos de teclado** para navegação rápida
 - **Modo foco** para interação
 
+## 📸 Capturas de Tela
+
+### Interface Principal
+![Interface Principal](prints/Screenshot_1.png)
+*Visão geral do overlay com informações principais do caminhão*
+
+### Visão do Caminhão
+![Visão do Caminhão](prints/Screenshot_2.png)
+*Detalhes técnicos e status dos sistemas do veículo*
+
+### Visão da Carga
+![Visão da Carga](prints/Screenshot_3.png)
+*Informações sobre a mercadoria transportada e rota*
+
+### Configurações e Controles
+![Configurações](prints/Screenshot_4.png)
+*Controles e configurações do overlay*
+
+---
+
 ## 🛠️ Especificações Técnicas
 
 ### Plataforma e Sistema
