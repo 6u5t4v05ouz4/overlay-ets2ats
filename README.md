@@ -11,7 +11,6 @@
 ![OpenAI Whisper](https://img.shields.io/badge/OpenAI-Whisper-412991?logo=openai&logoColor=white)
 ![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white)
 
-> **⚠️ VERSÃO DE AUDITORIA** - Esta é uma versão limpa para análise e auditoria de código.
 
 ## 🌟 Transforme sua Experiência de Simulação
 
@@ -32,13 +31,6 @@ Este overlay revolucionário para **Euro Truck Simulator 2** e **American Truck 
 
 Seja você um caminhoneiro virtual experiente ou um iniciante explorando as estradas europeias e americanas, este overlay oferece insights valiosos que transformarão sua forma de jogar. Monitore combustível, danos, navegação e muito mais - tudo em uma interface intuitiva que se integra perfeitamente ao seu gameplay.
 
-## 🎯 Propósito desta Versão
-
-Esta versão foi criada especificamente para:
-- **Auditoria de código** e análise de segurança
-- **Demonstração técnica** das funcionalidades de telemetria
-- **Base para desenvolvimento** sem componentes comerciais
-- **Estudo e aprendizado** da integração com jogos de simulação
 
 ## 🚀 Funcionalidades Principais
 
@@ -84,10 +76,6 @@ Esta versão foi criada especificamente para:
 | `Ctrl + Alt + 3` | Visão da carga (informações de transporte) |
 | `Ctrl + Alt + H` | Alternar modo foco/clique-através |
 
-## 🤖 Por que as APIs foram Removidas?
-
-### Propósito Original das APIs
-Na versão completa do projeto, as APIs do **Google Gemini** e **OpenAI Whisper** eram utilizadas para:
 
 #### 🎤 Comandos de Voz Inteligentes
 - **OpenAI Whisper**: Conversão de áudio em texto (speech-to-text)
