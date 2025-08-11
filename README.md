@@ -7,6 +7,9 @@
 ![ETS2/ATS](https://img.shields.io/badge/ETS2%2FATS-Telemetry-FFCC00)
 ![trucksim-telemetry](https://img.shields.io/npm/v/trucksim-telemetry?label=trucksim-telemetry)
 ![Licença](https://img.shields.io/badge/License-Audit%20Version-orange)
+![dotenv](https://img.shields.io/badge/dotenv-16.x-000000)
+![OpenAI Whisper](https://img.shields.io/badge/OpenAI-Whisper-412991?logo=openai&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white)
 
 > **⚠️ VERSÃO DE AUDITORIA** - Esta é uma versão limpa para análise e auditoria de código.
 
