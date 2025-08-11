@@ -50,10 +50,9 @@ Seja você um caminhoneiro virtual experiente ou um iniciante explorando as estr
 - **Modo foco** para interação
 
 ## 📸 Capturas de Tela
-
-### Interface Principal
-![Interface Principal](prints/Screenshot_1.png)
 *Visão geral do overlay com informações principais do caminhão*
+![Interface Principal](prints/Screenshot_1.png)
+
 
 ### *Detalhes técnicos e status dos sistemas do veículo*
 ![Modo Caminhão](prints/Screenshot_2.png)
