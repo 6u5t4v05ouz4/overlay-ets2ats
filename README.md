@@ -7,6 +7,10 @@
 ![ETS2/ATS](https://img.shields.io/badge/ETS2%2FATS-Telemetry-FFCC00)
 ![trucksim-telemetry](https://img.shields.io/npm/v/trucksim-telemetry?label=trucksim-telemetry)
 ![Licença](https://img.shields.io/badge/License-Audit%20Version-orange)
+![dotenv](https://img.shields.io/badge/dotenv-16.x-000000)
+![OpenAI Whisper](https://img.shields.io/badge/OpenAI-Whisper-412991?logo=openai&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white)
+![Licença](https://img.shields.io/badge/License-Nao%20autorizada%20para%20revenda-red)
 
 > **⚠️ VERSÃO DE AUDITORIA** - Esta é uma versão limpa para análise e auditoria de código.
 
@@ -64,10 +68,52 @@ Esta versão foi criada especificamente para:
 | `Ctrl + Alt + 3` | Visão da carga (informações de transporte) |
 | `Ctrl + Alt + H` | Alternar modo foco/clique-através |
 
+## 🤖 Por que as APIs foram Removidas?
+
+### Propósito Original das APIs
+Na versão completa do projeto, as APIs do **Google Gemini** e **OpenAI Whisper** eram utilizadas para:
+
+#### 🎤 Comandos de Voz Inteligentes
+- **OpenAI Whisper**: Conversão de áudio em texto (speech-to-text)
+- **Google Gemini**: Processamento de linguagem natural para interpretar comandos
+- **Funcionalidade**: Permitia controlar o overlay através de comandos falados em português
+
+#### 🗣️ Comandos Suportados
+- *"Central, status do caminhão"* → Alternar para visão do caminhão
+- *"Central, status da carga"* → Alternar para visão da carga  
+- *"Central, voltar"* → Retornar à visão padrão
+
+### 🔄 Alternativa Disponível
+**Você NÃO precisa das APIs!** O projeto funciona perfeitamente usando apenas:
+
+| Comando de Voz (Removido) | Atalho de Teclado (Disponível) |
+|---------------------------|--------------------------------|
+| "Status do caminhão" | `Ctrl + Alt + 2` |
+| "Status da carga" | `Ctrl + Alt + 3` |
+| "Voltar" | `Ctrl + Alt + 1` |
+| - | `Ctrl + Alt + H` (Modo foco) |
+
+### ⚡ Vantagens dos Atalhos
+- ✅ **Sem custos** de API
+- ✅ **Resposta instantânea** (sem latência de rede)
+- ✅ **Funciona offline** completamente
+- ✅ **Sem configuração** adicional necessária
+- ✅ **Mais rápido** que comandos de voz
+
+## 📋 Funcionalidades Removidas
+
+Esta versão de auditoria **não inclui**:
+- ❌ Integração com APIs comerciais (OpenAI/Google)
+- ❌ Sistemas de pagamento (Stripe)
+- ❌ Funcionalidades de voz/IA
+- ❌ Componentes proprietários
+- ❌ Chaves de API hardcoded
+- ❌ Dependências comerciais
+
 ## 🎯 Configuração de Telemetria
 
 ### Requisitos do Jogo
-1. **Plugin de telemetria** instalado (ex: scs-sdk-plugin)
+1. **Plugin de telemetria** instalado (ex: scs-telemetry.dll)
 2. **Jogo em execução** com perfil carregado
 3. **Telemetria habilitada** nas configurações do jogo
 
@@ -126,22 +172,6 @@ Esta versão foi criada especificamente para:
 - ℹ️ **Info** - Informação geral
 - ✅ **OK** - Sistema normal
 
-## 🚀 Execução
-
-### Instalação
-```bash
-npm install
-```
-
-### Desenvolvimento
-```bash
-npm run dev
-```
-
-### Produção
-```bash
-npm start
-```
 
 ## 🔧 Solução de Problemas
 
@@ -158,28 +188,10 @@ npm start
 4. Verifique as configurações de exibição
 
 ### Performance baixa
-1. Feche aplicações desnecessárias
-2. Verifique uso de CPU/RAM
-3. Atualize drivers gráficos
-4. Reduza configurações do jogo se necessário
+1. Atualize drivers gráficos
 
-## 📋 Funcionalidades Removidas
-
-Esta versão de auditoria **não inclui**:
-- ❌ Integração com APIs comerciais
-- ❌ Sistemas de pagamento
-- ❌ Funcionalidades de voz/IA
-- ❌ Componentes proprietários
-- ❌ Chaves de API hardcoded
-- ❌ Dependências comerciais
 
 ## 📄 Licença
-
-**Versão de Auditoria** - Disponibilizada para:
-- ✅ Análise e auditoria de código
-- ✅ Estudo e aprendizado
-- ✅ Desenvolvimento não comercial
-- ✅ Demonstração técnica
 
 **Restrições**:
 - ❌ Uso comercial sem autorização
