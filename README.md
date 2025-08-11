@@ -76,7 +76,7 @@ Na versão completa do projeto, as APIs do **Google Gemini** e **OpenAI Whisper*
 #### 🎤 Comandos de Voz Inteligentes
 - **OpenAI Whisper**: Conversão de áudio em texto (speech-to-text)
 - **Google Gemini**: Processamento de linguagem natural para interpretar comandos
-- **Funcionalidade**: Permitia controlar o overlay através de comandos falados em português
+- **Funcionalidade**: Permite controlar o overlay através de comandos falados em português
 
 #### 🗣️ Comandos Suportados
 - *"Central, status do caminhão"* → Alternar para visão do caminhão
@@ -91,7 +91,7 @@ Na versão completa do projeto, as APIs do **Google Gemini** e **OpenAI Whisper*
 | "Status do caminhão" | `Ctrl + Alt + 2` |
 | "Status da carga" | `Ctrl + Alt + 3` |
 | "Voltar" | `Ctrl + Alt + 1` |
-| - | `Ctrl + Alt + H` (Modo foco) |
+| "Modo foco" | `Ctrl + Alt + H` |
 
 ### ⚡ Vantagens dos Atalhos
 - ✅ **Sem custos** de API
