@@ -1,4 +1,4 @@
-# ETS2 Overlay - Versão de Auditoria
+# 🚛 ETS2 Overlay - Versão de Auditoria
 
 ![Electron](https://img.shields.io/badge/Electron-31.x-47848F?logo=electron&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)
@@ -7,14 +7,27 @@
 ![ETS2/ATS](https://img.shields.io/badge/ETS2%2FATS-Telemetry-FFCC00)
 ![trucksim-telemetry](https://img.shields.io/npm/v/trucksim-telemetry?label=trucksim-telemetry)
 ![Licença](https://img.shields.io/badge/License-Audit%20Version-orange)
-![dotenv](https://img.shields.io/badge/dotenv-16.x-000000)
-![OpenAI Whisper](https://img.shields.io/badge/OpenAI-Whisper-412991?logo=openai&logoColor=white)
-![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white)
-![Licença](https://img.shields.io/badge/License-Nao%20autorizada%20para%20revenda-red)
 
 > **⚠️ VERSÃO DE AUDITORIA** - Esta é uma versão limpa para análise e auditoria de código.
 
-Overlay em Electron sempre no topo (200x400) para Euro Truck Simulator 2 / American Truck Simulator, exibindo telemetria do jogo em tempo real.
+## 🌟 Transforme sua Experiência de Simulação
+
+**Imagine ter todas as informações cruciais do seu caminhão sempre à vista, sem nunca perder o foco da estrada.** 
+
+Este overlay revolucionário para **Euro Truck Simulator 2** e **American Truck Simulator** oferece uma experiência de telemetria em tempo real como nunca vista antes. Com uma interface elegante e sempre visível, você terá controle total sobre cada aspecto da sua jornada.
+
+### 🎮 Por que Este Overlay é Especial?
+
+- **🔥 Sempre Visível**: Interface flutuante que nunca atrapalha sua gameplay
+- **⚡ Tempo Real**: Dados instantâneos direto do motor do jogo
+- **🎯 Múltiplas Visões**: Alterne entre informações do caminhão, carga e navegação
+- **🚀 Zero Configuração**: Funciona imediatamente após a instalação
+- **💎 Interface Moderna**: Design limpo e profissional que complementa o jogo
+- **🔧 Totalmente Gratuito**: Sem custos ocultos ou limitações
+
+### 🛣️ Eleve Seu Realismo ao Próximo Nível
+
+Seja você um caminhoneiro virtual experiente ou um iniciante explorando as estradas europeias e americanas, este overlay oferece insights valiosos que transformarão sua forma de jogar. Monitore combustível, danos, navegação e muito mais - tudo em uma interface intuitiva que se integra perfeitamente ao seu gameplay.
 
 ## 🎯 Propósito desta Versão
 
@@ -100,15 +113,6 @@ Na versão completa do projeto, as APIs do **Google Gemini** e **OpenAI Whisper*
 - ✅ **Sem configuração** adicional necessária
 - ✅ **Mais rápido** que comandos de voz
 
-## 📋 Funcionalidades Removidas
-
-Esta versão de auditoria **não inclui**:
-- ❌ Integração com APIs comerciais (OpenAI/Google)
-- ❌ Sistemas de pagamento (Stripe)
-- ❌ Funcionalidades de voz/IA
-- ❌ Componentes proprietários
-- ❌ Chaves de API hardcoded
-- ❌ Dependências comerciais
 
 ## 🎯 Configuração de Telemetria
 
