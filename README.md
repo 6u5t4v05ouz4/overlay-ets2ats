@@ -55,17 +55,16 @@ Seja você um caminhoneiro virtual experiente ou um iniciante explorando as estr
 ![Interface Principal](prints/Screenshot_1.png)
 *Visão geral do overlay com informações principais do caminhão*
 
-### Visão do Caminhão
-![Visão do Caminhão](prints/Screenshot_2.png)
-*Detalhes técnicos e status dos sistemas do veículo*
+### *Detalhes técnicos e status dos sistemas do veículo*
+![Modo Caminhão](prints/Screenshot_2.png)
 
-### Visão da Carga
-![Visão da Carga](prints/Screenshot_3.png)
-*Informações sobre a mercadoria transportada e rota*
 
-### Configurações e Controles
-![Configurações](prints/Screenshot_4.png)
-*Controles e configurações do overlay*
+### *Informações sobre velocidade - marcha - RPM - Combustivel e etc*
+![Visão da Geral](prints/Screenshot_3.png)
+
+
+### *Informações sobre a mercadoria transportada e rota*
+![Modo Carga](prints/Screenshot_4.png)
 
 ---
 
