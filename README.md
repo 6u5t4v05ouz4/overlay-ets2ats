@@ -1,4 +1,4 @@
-### ETS2 Overlay — Telemetria + Voz
+# ETS2 Overlay - Versão de Auditoria
 
 ![Electron](https://img.shields.io/badge/Electron-31.x-47848F?logo=electron&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)
@@ -6,158 +6,190 @@
 ![Windows](https://img.shields.io/badge/Windows-10%2B-0078D6?logo=windows&logoColor=white)
 ![ETS2/ATS](https://img.shields.io/badge/ETS2%2FATS-Telemetry-FFCC00)
 ![trucksim-telemetry](https://img.shields.io/npm/v/trucksim-telemetry?label=trucksim-telemetry)
-![dotenv](https://img.shields.io/badge/dotenv-16.x-000000)
-![OpenAI Whisper](https://img.shields.io/badge/OpenAI-Whisper-412991?logo=openai&logoColor=white)
-![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white)
-![Licença](https://img.shields.io/badge/License-Nao%20autorizada%20para%20revenda-red)
+![Licença](https://img.shields.io/badge/License-Audit%20Version-orange)
 
-> Não autorizado para revenda.
+> **⚠️ VERSÃO DE AUDITORIA** - Esta é uma versão limpa para análise e auditoria de código.
 
-Pequeno overlay em Electron sempre no topo (200x400) para Euro Truck Simulator 2 / American Truck Simulator, exibindo telemetria do jogo e suportando comandos por voz (OpenAI Whisper ou Google Gemini) para alternar entre visões (padrão, caminhão, carga).
+Overlay em Electron sempre no topo (200x400) para Euro Truck Simulator 2 / American Truck Simulator, exibindo telemetria do jogo em tempo real.
 
-#### Recursos
-- **Sempre no topo, transparente e arrastável**.
-- **Telemetria em tempo real** via `trucksim-telemetry` (velocidade, RPM, marcha, combustível, limite/cruzeiro, avisos de painel, danos, carga, navegação etc.).
-- **Comandos por voz** (PT-BR): "status do caminhão", "status da carga", "voltar".
-- **Provedores de voz**: OpenAI Whisper (`whisper-1`) ou Google Gemini (`gemini-1.5-flash`).
-- **Config persistente** (API Key e provedor) salva no diretório `userData` do Electron.
+## 🎯 Propósito desta Versão
 
----
+Esta versão foi criada especificamente para:
+- **Auditoria de código** e análise de segurança
+- **Demonstração técnica** das funcionalidades de telemetria
+- **Base para desenvolvimento** sem componentes comerciais
+- **Estudo e aprendizado** da integração com jogos de simulação
 
-### Requisitos
-- Windows 10+ (recomendado; projeto usa Electron 31).
-- Node.js 18+ e npm.
-- ETS2 ou ATS em execução, com plugin de telemetria compatível (ex.: `scs-sdk-plugin`).
-- Microfone e acesso à internet para transcrição.
+## 🚀 Funcionalidades Principais
 
-> Observação: o pacote `trucksim-telemetry` depende do plugin de telemetria do jogo. Verifique a instalação do plugin conforme a sua distribuição/versão do jogo.
+### 📊 Telemetria em Tempo Real
+- **Velocidade, RPM e marcha** do veículo
+- **Combustível e sistemas** do caminhão
+- **Navegação e destino** da rota
+- **Status da carga** transportada
+- **Avisos do painel** e alertas
+- **Danos do veículo** e componentes
 
----
+### 🎮 Interface Interativa
+- **Sempre no topo** e transparente
+- **Arrastável** pela tela
+- **Múltiplas visões** (padrão, caminhão, carga)
+- **Atalhos de teclado** para navegação rápida
+- **Modo foco** para interação
+
+## 🛠️ Especificações Técnicas
+
+### Plataforma e Sistema
+- **SO**: Windows 10+ (recomendado)
+- **Runtime**: Electron 31.x
+- **Node.js**: 18+
+- **Arquitetura**: x64
+
+### Jogos Suportados
+- Euro Truck Simulator 2 (ETS2)
+- American Truck Simulator (ATS)
+
+### Linguagem e Dependências
+- **JavaScript ES2022**
+- **trucksim-telemetry**: ^0.21.0
+- **canvas-confetti**: ^1.9.3
+- **dotenv**: ^16.6.1
+
+## ⌨️ Atalhos de Teclado
+
+| Atalho | Função |
+|--------|--------|
+| `Ctrl + Alt + 1` | Visão padrão (resumo geral) |
+| `Ctrl + Alt + 2` | Visão do caminhão (detalhes técnicos) |
+| `Ctrl + Alt + 3` | Visão da carga (informações de transporte) |
+| `Ctrl + Alt + H` | Alternar modo foco/clique-através |
+
+## 🎯 Configuração de Telemetria
+
+### Requisitos do Jogo
+1. **Plugin de telemetria** instalado (ex: scs-sdk-plugin)
+2. **Jogo em execução** com perfil carregado
+3. **Telemetria habilitada** nas configurações do jogo
+
+### Configuração no Jogo
+1. Abra ETS2/ATS
+2. Carregue seu perfil
+3. Verifique se a telemetria está ativa
+4. Inicie uma viagem ou modo livre
+
+### Configuração no Aplicativo
+1. Execute o overlay
+2. Aguarde a conexão automática
+3. Verifique o status no rodapé da aplicação
+
+### Verificação de Conexão
+- **🟢 Conectado**: Dados sendo recebidos normalmente
+- **🟡 Aguardando**: Tentando conectar com o jogo
+- **🔴 Desconectado**: Sem comunicação com a telemetria
+
+## 📱 Ícones e Indicadores
+
+### Status da Telemetria
+- 🟢 **Conectado** - Recebendo dados
+- 🟡 **Aguardando** - Tentando conectar
+- 🔴 **Erro** - Falha na conexão
+
+### Veículo
+- 🚗 **Velocidade** - Velocidade atual
+- 🔄 **RPM** - Rotação do motor
+- ⚙️ **Marcha** - Marcha engatada
+- ⛽ **Combustível** - Nível do tanque
+- 🚦 **Limite** - Velocidade máxima da via
+- 🎚️ **Cruzeiro** - Controle de velocidade
+
+### Navegação
+- 🧭 **Distância** - Até o destino
+- 📍 **Origem** - Cidade de partida
+- 🎯 **Destino** - Cidade de chegada
+- 🛣️ **Rota** - Informações da estrada
+
+### Carga
+- 📦 **Tipo** - Mercadoria transportada
+- ⚖️ **Peso** - Massa da carga
+- 🧰 **Dano** - Estado da mercadoria
+- 💰 **Valor** - Informações comerciais
+
+### Sistema
+- 🔋 **Bateria** - Voltagem elétrica
+- 🌡️ **Temperatura** - Motor e sistemas
+- 🛢️ **Óleo** - Pressão e nível
+- 💨 **Ar** - Sistema pneumático
+
+### Alertas
+- ⚠️ **Aviso** - Atenção necessária
+- 🚨 **Crítico** - Ação imediata
+- ℹ️ **Info** - Informação geral
+- ✅ **OK** - Sistema normal
+
+## 🚀 Execução
 
 ### Instalação
-1. Instale dependências:
-   ```bash
-   npm install
-   ```
-2. (Opcional) Crie um arquivo `.env` na raiz com sua chave, se preferir usar via ambiente:
-   ```ini
-   # Escolha um provedor e configure a chave correspondente
-   OPENAI_API_KEY=coloque_sua_chave_aqui
-   # ou
-   GOOGLE_API_KEY=coloque_sua_chave_aqui
-   ```
-   Você também pode salvar a chave diretamente pela interface do overlay (campo "API Key" + botão "Salvar"). Isso persiste em `overlay-config.json` no `userData` do app.
+```bash
+npm install
+```
 
----
-
-### Execução
+### Desenvolvimento
 ```bash
 npm run dev
 ```
-Ou:
+
+### Produção
 ```bash
 npm start
 ```
 
-### Icones 
-�� Visão Padrão (Telemetria)
-🚗 - "Velocidade atual do veículo"
-�� - "Rotação por minuto do motor"
-⚙️ - "Marcha atual engatada"
-⛽ - "Nível de combustível restante"
-🚦 - "Limite de velocidade da via"
-🎚️ - "Velocidade do controle de cruzeiro"
-�� Status do Truck
-��️ - "Marca do caminhão"
-�� - "Modelo do caminhão"
-🧭 - "Quilometragem total percorrida"
-�� - "Dano total acumulado no veículo"
-🏠 - "Dano na cabine do caminhão"
-🧱 - "Dano no chassi do veículo"
-🛠️ - "Dano no motor do caminhão"
-⚙️ - "Dano no sistema de transmissão"
-🛞 - "Dano nos pneus do veículo"
-⚠️ Avisos do Painel
-�� - "Status da pressão do sistema de ar"
-�� - "Status da pressão de ar de emergência"
-⛽ - "Status do nível de combustível"
-�� - "Status do nível de AdBlue"
-🛢️ - "Status da pressão do óleo do motor"
-🌡️ - "Status da temperatura da água"
-🔋 - "Status da voltagem da bateria"
-�� Status da Carga
-📍 - "Cidade de origem da carga"
-🎯 - "Cidade de destino da carga"
-🧭 - "Distância restante até o destino"
-⚖️ - "Peso total da carga transportada"
-📦 - "Tipo de mercadoria transportada"
-🧰 - "Dano acumulado na carga"
+## 🔧 Solução de Problemas
 
-### Atalhos de Teclado
-- Ctrl + Alt + 1: alterna para a visão padrão (resumo)
-- Ctrl + Alt + 2: alterna para a visão de Truck (detalhes do caminhão)
-- Ctrl + Alt + 3: alterna para a visão de Cargo (detalhes da carga)
-- Ctrl + Alt + H: alterna o modo de foco/clique-através do overlay
+### Telemetria não conecta
+1. Verifique se o jogo está rodando
+2. Confirme a instalação do plugin de telemetria
+3. Carregue um perfil no jogo
+4. Reinicie o overlay se necessário
 
-Com o app aberto:
-- Selecione o **provedor** (OpenAI ou Google) no seletor.
-- Informe a **API Key** e clique em **Salvar** (ou use variáveis de ambiente conforme acima).
-- Clique em **Iniciar** para começar a gravar áudio e habilitar comandos.
-- Clique em **Parar** para encerrar a gravação.
+### Overlay não aparece
+1. Verifique se está sempre no topo
+2. Tente mover com Alt+Tab
+3. Reinicie a aplicação
+4. Verifique as configurações de exibição
 
-Comandos de voz suportados (PT-BR):
-- "central status do caminhão" → mostra a aba de Truck
-- "central status da carga" → mostra a aba de Cargo
-- "central voltar" → retorna à visão padrão (telemetria resumida)
+### Performance baixa
+1. Feche aplicações desnecessárias
+2. Verifique uso de CPU/RAM
+3. Atualize drivers gráficos
+4. Reduza configurações do jogo se necessário
+
+## 📋 Funcionalidades Removidas
+
+Esta versão de auditoria **não inclui**:
+- ❌ Integração com APIs comerciais
+- ❌ Sistemas de pagamento
+- ❌ Funcionalidades de voz/IA
+- ❌ Componentes proprietários
+- ❌ Chaves de API hardcoded
+- ❌ Dependências comerciais
+
+## 📄 Licença
+
+**Versão de Auditoria** - Disponibilizada para:
+- ✅ Análise e auditoria de código
+- ✅ Estudo e aprendizado
+- ✅ Desenvolvimento não comercial
+- ✅ Demonstração técnica
+
+**Restrições**:
+- ❌ Uso comercial sem autorização
+- ❌ Revenda ou sublicenciamento
+- ❌ Distribuição com fins lucrativos
 
 ---
 
-### Telemetria do jogo
-O app usa `trucksim-telemetry` e escuta atualizações periódicas (100 ms). Campos principais mapeados:
-- Velocidade, RPM, marcha, combustível, limite de velocidade, cruzeiro
-- Marca/modelo, hodômetro, danos (total e por subsistema)
-- Origem/destino, distância restante, tipo/peso, dano da carga
-- Avisos de painel (ar, óleo, água, bateria, etc.)
+**Desenvolvido para demonstração técnica e auditoria de código**
 
-Se a telemetria não conectar:
-- Verifique a instalação do `scs-sdk-plugin`/plugin equivalente.
-- Abra o jogo e carregue o perfil antes de iniciar o overlay.
-- Confira eventuais mensagens de erro no overlay (rodapé) ou no console do app.
-
----
-
-### Segurança e armazenamento
-- O arquivo de configuração persistente é salvo automaticamente em `userData/overlay-config.json` com o formato:
-  ```json
-  { "apiKey": "...", "provider": "openai|google" }
-  ```
-- Alternativamente, `OPENAI_API_KEY` e/ou `GOOGLE_API_KEY` podem ser lidos do `.env` (via `dotenv`).
-
----
-
-### Scripts
-- `npm run dev` / `npm start`: inicia o Electron.
-
----
-
-### Troubleshooting rápido
-- "Jogo desconectado" / sem dados: confirme o plugin de telemetria e que o jogo está em execução.
-- "API Key ausente": salve a chave na UI ou configure `.env` e reinicie.
-- Problemas de microfone: verifique permissões do Windows e que o dispositivo padrão está ativo.
-
----
-
-### Licença
-Este projeto é disponibilizado para uso pessoal e não comercial. É **estritamente proibido**:
-
-- Revender, sublicenciar, alugar, ou monetizar direta ou indiretamente este software, seus binários ou derivados.
-- Distribuir versões pagas ou que exijam qualquer forma de contraprestação financeira.
-
-Você pode:
-
-- Fazer fork e modificar para uso próprio (não comercial).
-- Distribuir binários ou forks de forma gratuita, mantendo atribuição e link para este repositório.
-
-Para parcerias ou uso comercial, entre em contato previamente para autorização por escrito.
+*Esta versão mantém apenas as funcionalidades essenciais de telemetria para análise e estudo.*
 
 
