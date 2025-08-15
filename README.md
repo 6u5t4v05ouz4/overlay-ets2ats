@@ -12,13 +12,15 @@
 ![Google Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=google&logoColor=white)
 
 
+## Video tutorial
+**[Video tutorial](https://youtu.be/kym32Ft0ihk)**
+
+
 ## 🌟 Transforme sua Experiência de Simulação
 
-**Imagine ter todas as informações cruciais do seu caminhão sempre à vista, sem nunca perder o foco da estrada.** 
+Este overlay para **Euro Truck Simulator 2** e **American Truck Simulator** oferece uma experiência de telemetria em tempo real como nunca vista antes. Com uma interface elegante e sempre visível, você terá controle total sobre cada aspecto da sua jornada.
 
-Este overlay revolucionário para **Euro Truck Simulator 2** e **American Truck Simulator** oferece uma experiência de telemetria em tempo real como nunca vista antes. Com uma interface elegante e sempre visível, você terá controle total sobre cada aspecto da sua jornada.
-
-### 🎮 Por que Este Overlay é Especial?
+### 🎮 Características
 
 - **🔥 Sempre Visível**: Interface flutuante que nunca atrapalha sua gameplay
 - **⚡ Tempo Real**: Dados instantâneos direto do motor do jogo
@@ -26,11 +28,6 @@ Este overlay revolucionário para **Euro Truck Simulator 2** e **American Truck 
 - **🚀 Zero Configuração**: Funciona imediatamente após a instalação
 - **💎 Interface Moderna**: Design limpo e profissional que complementa o jogo
 - **🔧 Totalmente Gratuito**: Sem custos ocultos ou limitações
-
-### 🛣️ Eleve Seu Realismo ao Próximo Nível
-
-Seja você um caminhoneiro virtual experiente ou um iniciante explorando as estradas europeias e americanas, este overlay oferece insights valiosos que transformarão sua forma de jogar. Monitore combustível, danos, navegação e muito mais - tudo em uma interface intuitiva que se integra perfeitamente ao seu gameplay.
-
 
 ## 🚀 Funcionalidades Principais
 
